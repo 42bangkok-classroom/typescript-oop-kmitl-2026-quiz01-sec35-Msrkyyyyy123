@@ -4,20 +4,20 @@ const point = Number(input);
 if (Number.isNaN(point)){
   console.log("invalid number")
 } 
-else if (point < 0 || point > 100){
+else if (point < 0 || point > 100 || input === undefined || isNaN(point) || input == "" ){
   console.log("invalid number")
 } 
 
 else {
 if (point >= 80) {
-  console.log("grade is A")
+  console.log("Grade is A")
 } else if (point >= 70) {
-  console.log("grade is B")
+  console.log("Grade is B")
 } else if (point >= 60) {
-  console.log("grade is C")
+  console.log("Grade is C")
 } else if (point >= 50) {
-  console.log("grade is D")
+  console.log("Grade is D")
 } else {
-  console.log("grade is F")
+  console.log("Grade is F")
 }
 }

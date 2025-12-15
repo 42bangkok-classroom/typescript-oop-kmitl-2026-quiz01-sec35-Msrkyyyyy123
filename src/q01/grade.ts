@@ -1,9 +1,15 @@
 const input = ProcessingInstruction.arguments[2];
 const point = Number(input);
 
-if (point < 0 || point > 100){
+if (Number.isNaN(point)){
   console.log("invalid number")
-} else if (point >= 80) {
+} 
+else if (point < 0 || point > 100){
+  console.log("invalid number")
+} 
+
+else {
+if (point >= 80) {
   console.log("A")
 } else if (point >= 70) {
   console.log("B")
@@ -13,4 +19,5 @@ if (point < 0 || point > 100){
   console.log("D")
 } else {
   console.log("F")
+}
 }

@@ -1,6 +1,7 @@
 const input4 = +ProcessingInstruction.arguments[2];
 if (Number.isNaN(input4) || input4 <= 0){
-    Process.exit(1);
+  // ProcessingInstruction.
+  process.exit(0);
 }
 
 for (let i = 1; i <= input4; i++){
